@@ -1,0 +1,6 @@
+out
+db/
+node_modules
+.vscode-test/
+*.vsix
+/nbproject/private/

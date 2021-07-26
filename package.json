@@ -1,0 +1,177 @@
+{
+  "name": "code-generator-from-proto",
+  "displayName": "TypeScript's generator for classes in Object Oriented Programming Style",
+  "description": "Automatic generator for classes",
+  "version": "3.0.0",
+  "publisher": "Hamza Mounir",
+  "author": "Hamza Mounir <hamza.pixelle@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamzaPixl/code-generator-from-proto"
+  },
+  "bugs": {
+    "url": "https://github.com/hamzaPixl/code-generator-from-proto/issues"
+  },
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.generateInterface",
+    "onCommand:extension.generateInterfaceES6",
+    "onCommand:extension.generateTestMapper",
+    "onCommand:extension.generateTestMapperES6",
+    "onCommand:extension.generateTestClass",
+    "onCommand:extension.generateTestClassES6",
+    "onCommand:extension.generateFixture",
+    "onCommand:extension.generateFixtureES6",
+    "onCommand:extension.generateMapper",
+    "onCommand:extension.generateMapperES6",
+    "onCommand:extension.generateProps",
+    "onCommand:extension.generatePropsES6",
+    "onCommand:extension.generateUpdate",
+    "onCommand:extension.generateUpdateES6",
+    "onCommand:extension.generateEquals",
+    "onCommand:extension.generateEqualsES6",
+    "onCommand:extension.generateConstructor",
+    "onCommand:extension.generateConstructorES6",
+    "onCommand:extension.generateGetters",
+    "onCommand:extension.generateGettersES6",
+    "onCommand:extension.generateSetters",
+    "onCommand:extension.generateSettersES6",
+    "onCommand:extension.generateClass",
+    "onCommand:extension.generateClassES6"
+  ],
+  "main": "./out/main",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.generateInterface",
+        "title": "Generate Interface"
+      },
+      {
+        "command": "extension.generateInterfaceES6",
+        "title": "Generate Interface ES6"
+      },
+      {
+        "command": "extension.generateTestMapper",
+        "title": "Generate Test Mapper"
+      },
+      {
+        "command": "extension.generateTestMapperES6",
+        "title": "Generate Test Mapper ES6"
+      },
+      {
+        "command": "extension.generateTestClass",
+        "title": "Generate Test Class"
+      },
+      {
+        "command": "extension.generateTestClassES6",
+        "title": "Generate Test Class ES6"
+      },
+      {
+        "command": "extension.generateFixture",
+        "title": "Generate Fixtures"
+      },
+      {
+        "command": "extension.generateFixtureES6",
+        "title": "Generate Fixtures ES6"
+      },
+      {
+        "command": "extension.generateMapper",
+        "title": "Generate Mapper "
+      },
+      {
+        "command": "extension.generateMapperES6",
+        "title": "Generate Mapper  ES6"
+      },
+      {
+        "command": "extension.generateClass",
+        "title": "Generate Class "
+      },
+      {
+        "command": "extension.generateClassES6",
+        "title": "Generate Class  ES6"
+      },
+      {
+        "command": "extension.generateProps",
+        "title": "Generate Props"
+      },
+      {
+        "command": "extension.generatePropsES6",
+        "title": "Generate Props ES6"
+      },
+      {
+        "command": "extension.generateUpdate",
+        "title": "Generate Update"
+      },
+      {
+        "command": "extension.generateUpdateES6",
+        "title": "Generate Update ES6"
+      },
+      {
+        "command": "extension.generateEquals",
+        "title": "Generate Equals"
+      },
+      {
+        "command": "extension.generateEqualsES6",
+        "title": "Generate Equals ES6"
+      },
+      {
+        "command": "extension.generateConstructor",
+        "title": "Generate Constructor"
+      },
+      {
+        "command": "extension.generateConstructorES6",
+        "title": "Generate Constructor ES6"
+      },
+      {
+        "command": "extension.generateGetters",
+        "title": "Generate Getters"
+      },
+      {
+        "command": "extension.generateGettersES6",
+        "title": "Generate Getters ES6"
+      },
+      {
+        "command": "extension.generateSetters",
+        "title": "Generate Setters"
+      },
+      {
+        "command": "extension.generateSettersES6",
+        "title": "Generate Setters ES6"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "format": "prettier --write .",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 80,
+    "arrowParens": "always"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.171",
+    "@types/mocha": "^8.2.0",
+    "@types/node": "^14.14.28",
+    "prettier": "^2.3.2",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.5",
+    "vscode": "^1.1.37"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
