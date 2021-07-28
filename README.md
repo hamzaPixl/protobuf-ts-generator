@@ -40,7 +40,7 @@ From properties it can generate setter for them. The setters are there to update
 
 Function that check every property to define if the object received as input is the same as the actual object.
 
-C## onstructor:
+## Constructor:
 
 Each class has a constructor function to initialize your object so here we use props input to initialize the properties defined on the class.
 
