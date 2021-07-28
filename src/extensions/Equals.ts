@@ -45,7 +45,7 @@ export class Equals implements Extension {
 
   write(informations: InformationProperty[], className: string): string {
     return `
-  public equals(init: ${className}Props): boolean {
+  public equals(init: ${className}): boolean {
     return ${informations
       .map(
         (info, index) =>
