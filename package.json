@@ -20,6 +20,8 @@
     "Other"
   ],
   "activationEvents": [
+    "onCommand:extension.generateAllFromProto",
+    "onCommand:extension.generateAllFromProtoES6",
     "onCommand:extension.generateInterface",
     "onCommand:extension.generateInterfaceES6",
     "onCommand:extension.generateTestMapper",
@@ -48,6 +50,14 @@
   "main": "./out/main",
   "contributes": {
     "commands": [
+      {
+        "command": "extension.generateAllFromProto",
+        "title": "Generate All from proto"
+      },
+      {
+        "command": "extension.generateAllFromProtoES6",
+        "title": "Generate All from proto ES6"
+      },
       {
         "command": "extension.generateInterface",
         "title": "Generate Interface"

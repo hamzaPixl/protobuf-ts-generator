@@ -41,13 +41,11 @@ export class Getters implements Extension {
   writeTestLine(information: InformationProperty, className?: string): string {
     return `
     it('Get ${information.attribute}', () => {
-      const entityProps: ${pascalCase(className)}Props = {
+      const entityProps = {
         ${this.fixtureGenerator.writeLine(information)},
       };
 
-      const entity = new ${pascalCase(className)}(${pascalCase(
-      className,
-    )}Props);
+      const entity = new ${pascalCase(className)}(entityProps);
       expect(entity.${
         information.type === 'Boolean' || information.type === 'boolean'
           ? 'is'

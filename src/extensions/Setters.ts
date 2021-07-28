@@ -41,13 +41,11 @@ export class Setters implements Extension {
   writeTestLine(information: InformationProperty, className?: string): string {
     return `
     it('Set ${information.attribute}', () => {
-      const entityProps: ${pascalCase(className)}Props = {
+      const entityProps = {
         ${this.fixtureGenerator.writeLine(information)},
       };
 
-      const entity = new ${pascalCase(className)}(${pascalCase(
-      className,
-    )}Props);
+      const entity = new ${pascalCase(className)}(entityProps);
       entity.set${information.camelCaseAttribute}(${
       this.fixtureGenerator.writeLine(information).split(':')[1]
     });

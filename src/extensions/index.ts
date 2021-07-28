@@ -1,4 +1,5 @@
 export * from './Getters';
+export * from './GeneratorFromProto';
 export * from './Setters';
 export * from './Constructor';
 export * from './Equals';

@@ -1,3 +1,4 @@
+export * from './generateAllFromProto';
 export * from './generateUpdate';
 export * from './generateEquals';
 export * from './generateConstructor';

@@ -34,10 +34,10 @@ export class Mapper implements Extension {
     return `
     import { ${pascalCase(className)} as ${pascalCase(
       className,
-    )}Proto } from '@qover-private/protos/qover/dojo/service/v1/${className}';
+    )}Proto } from '../../${className}.proto';
     import { ${pascalCase(className)}, ${pascalCase(
       className,
-    )}Props } from '@libs/shared/domain';
+    )}Props } from '../domain/${pascalCase(className)}';
 
     export class ${pascalCase(className)}Mapper {
       private constructor() {}

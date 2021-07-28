@@ -4,6 +4,7 @@ import { getRows, toProtoProperty } from '../lib/propertiesProto';
 import { pascalCase } from '../lib/trad';
 import { Extension } from '../types/Extension';
 import { Getters, Setters } from '.';
+import { camelCase } from 'lodash';
 
 export class TestForMapper implements Extension {
   gettersGenerator = new Getters();
@@ -38,36 +39,32 @@ export class TestForMapper implements Extension {
     return `
     import { ${pascalCase(className)} as ${pascalCase(
       className,
-    )}Proto } from '@qover-private/protos/qover/dojo/service/v1/${className}';
+    )}Proto } from '../../${className}.proto';
     import { ${pascalCase(className)}Mapper } from './${pascalCase(
       className,
     )}Mapper';
-    import { ${pascalCase(className)}Props, ${pascalCase(
+    import { ${pascalCase(className)}, ${pascalCase(
       className,
-    )} } from '@libs/shared/domain';
-    import fixtures from '../../test/fixtures';
+    )}Props } from '../domain/${pascalCase(className)}';
+    import fixtures from '../fixtures/${pascalCase(className)}';
 
     describe('${pascalCase(className)}Mapper', () => {
-      const ${pascalCase(className)}Props: ${pascalCase(
+      const ${camelCase(className)}Props: ${pascalCase(
       className,
-    )}Props = fixtures.${pascalCase(className)}.props();
-      const ${pascalCase(className)}Proto: ${pascalCase(
+    )}Props = fixtures.props();
+      const ${camelCase(className)}Proto: ${pascalCase(
       className,
-    )}Proto = { ...${pascalCase(className)}Props };
-
-      it('should be defined', () => {
-        expect(${pascalCase(className)}Mapper).toBeDefined();
-      });
+    )}Proto = { ...${camelCase(className)}Props };
 
       describe('fromProto', () => {
         it('should return an ${pascalCase(className)}Props object', () => {
-          const ${pascalCase(className)}PropsFromProto: ${pascalCase(
+          const ${camelCase(className)}PropsFromProto: ${pascalCase(
       className,
-    )}Props = ${pascalCase(className)}Mapper.fromProto(${pascalCase(
+    )}Props = ${pascalCase(className)}Mapper.fromProto(${camelCase(
       className,
     )}Proto);
 
-          expect(${pascalCase(className)}PropsFromProto).toEqual(${pascalCase(
+          expect(${camelCase(className)}PropsFromProto).toEqual(${camelCase(
       className,
     )}Props);
         });
@@ -76,16 +73,16 @@ export class TestForMapper implements Extension {
       describe('toProto', () => {
         it('should return a ${pascalCase(className)}Proto from a ${pascalCase(
       className,
-    )} VO', () => {
-          const ${pascalCase(className)} = new ${pascalCase(
+    )} ', () => {
+          const ${camelCase(className)} = new ${pascalCase(
       className,
-    )}(${pascalCase(className)}Props);
+    )}(${camelCase(className)}Props);
 
-          const ${pascalCase(className)}ProtoFromRefs: ${pascalCase(
+          const ${camelCase(className)}ProtoFromRefs: ${pascalCase(
       className,
-    )}Proto = ${pascalCase(className)}Mapper.toProto(${pascalCase(className)});
+    )}Proto = ${pascalCase(className)}Mapper.toProto(${camelCase(className)});
 
-          expect(${pascalCase(className)}ProtoFromRefs).toEqual(${pascalCase(
+          expect(${camelCase(className)}ProtoFromRefs).toEqual(${camelCase(
       className,
     )}Proto);
         });

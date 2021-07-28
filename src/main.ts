@@ -13,6 +13,7 @@ import {
   generateTestClass,
   generateTestMapper,
   generateInterface,
+  generateAllFromProto,
 } from './commands';
 
 export function activate(context: vscode.ExtensionContext) {
@@ -33,6 +34,7 @@ export function activate(context: vscode.ExtensionContext) {
     generateTestMapper,
     generateFixture,
     generateInterface,
+    generateAllFromProto,
   ];
 
   commands.forEach((c) => {

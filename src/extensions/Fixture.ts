@@ -54,13 +54,10 @@ export class Fixture implements Extension {
   write(informations: InformationProperty[], className: string): string {
     return `
     import * as faker from 'faker';
-    import { ${pascalCase(className)}Props } from '@libs/shared/domain';
-    import { ${pascalCase(
+    import { ${pascalCase(className)}Props, ${pascalCase(
       className,
-    )} } from '@qover-private/protos/qover/dojo/service/v1/${className}';
-    import { ${pascalCase(
-      className,
-    )}Schema } from '@module/business/test/helpers/mongoSchemas';
+    )}Schema } from '../domain/${pascalCase(className)}';
+    import { ${pascalCase(className)} } from '../../${className}.proto';
 
     const props = (): ${pascalCase(className)}Props => {
       return {

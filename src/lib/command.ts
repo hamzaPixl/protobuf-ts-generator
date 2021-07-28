@@ -20,7 +20,7 @@ export function handleCommand(command: Extension, es6 = false): void {
     editor.edit((e) =>
       e.insert(
         selection.selections[selection.selections.length - 1].end,
-        executedCommand,
+        executedCommand!,
       ),
     );
   } catch (error) {

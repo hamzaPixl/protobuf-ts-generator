@@ -37,9 +37,7 @@ export class TestForClass implements Extension {
   write(informations: InformationProperty[], className: string): string {
     return `
     import * as faker from 'faker';
-    import { ${pascalCase(className)}, ${pascalCase(
-      className,
-    )}Props } from '@libs/shared/domain';
+    import { ${pascalCase(className)} } from './${pascalCase(className)}';
 
     describe('${pascalCase(className)}Model', () => {
       ${informations
