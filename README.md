@@ -1,3 +1,48 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<br />
+<p align="center">
+  <a href="https://protobuf-ts-generator.hmounir.com">
+    <img src="https://raw.githubusercontent.com/hamzaPixl/protobuf-ts-generator/master/images/icon.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">protobuf-ts-generator</h3>
+
+  <p align="center">
+    Generate Typescript code from protobuf message.
+    <br />
+    ·
+    <a href="https://github.com/hamzaPixl/protobuf-ts-generator/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/hamzaPixl/protobuf-ts-generator/issues">Request Feature</a>
+  </p>
+</p>
+
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#input">Input</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#release">Release notes</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
 # Introduction
 
 After multiple implementation of services we kind of always need to translater our ideas in class to be used on code. When tou work on oriented object tou have to define each entity of your domain in class and do a kind of monkey job at the begining of your project.
@@ -85,7 +130,7 @@ It generates you a simple module for your nestjs application to be directly used
   The pattern usage is simple, a use case file for a simple operation.
   This file contains function that are used on the controller for the CRUD operations defined in it.
 
-## Release Notes
+## Release
 
 Relevant releases:
 
