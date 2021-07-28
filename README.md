@@ -2,13 +2,13 @@
 
 After multiple implementation of services we kind of always need to translater our ideas in class to be used on code. When tou work on oriented object tou have to define each entity of your domain in class and do a kind of monkey job at the begining of your project.
 
-This monkey job can be reduced by generating theses class from a low level language input. Thé aim here is to generate the basic code that you need to start written your business code from a simple input. Having already your class with some getters / setters and more can be cool when you need to go fast. Thé service is here only to help you, its dump so sometimes you will need to review it for example for importing the nested classes.
+This monkey job can be reduced by generating theses class from a low level language input. the aim here is to generate the basic code that you need to start written your business code from a simple input. Having already your class with some getters / setters and more can be cool when you need to go fast. the service is here only to help you, its dump so sometimes you will need to review it for example for importing the nested classes.
 
 Code generated is Typescripted so we can have object that we can rely on. Wen can have than more that just classes, tests, mappers, schéma and more.
 
 ![Demo](images/demo.gif)
 
-But first lets define some roules on thé input that we need and also define what we want as result.
+But first lets define some roules on the input that we need and also define what we want as result.
 
 # Input
 
