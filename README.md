@@ -95,7 +95,7 @@ Initial version
 
 ## Roadmap
 
-See the [open issues](https://github.com/hamzaPixl/code-generator-from-proto/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/hamzaPixl/protobuf-ts-generator/issues) for a list of proposed features (and known issues).
 
 ## Contributing
 
@@ -115,16 +115,16 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Hamza Mounir - [@pixlhamza](https://twitter.com/pixlhamza) - hamza.pixelle@gmail.com
 
-[contributors-shield]: https://img.shields.io/github/contributors/hamzaPixl/code-generator-from-proto.svg?style=for-the-badge
-[contributors-url]: https://github.com/hamzaPixl/code-generator-from-proto/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/hamzaPixl/code-generator-from-proto.svg?style=for-the-badge
-[forks-url]: https://github.com/hamzaPixl/code-generator-from-proto/network/members
-[stars-shield]: https://img.shields.io/github/stars/hamzaPixl/code-generator-from-proto.svg?style=for-the-badge
-[stars-url]: https://github.com/hamzaPixl/code-generator-from-proto/stargazers
-[issues-shield]: https://img.shields.io/github/issues/hamzaPixl/code-generator-from-proto.svg?style=for-the-badge
-[issues-url]: https://github.com/hamzaPixl/code-generator-from-proto/issues
-[license-shield]: https://img.shields.io/github/license/hamzaPixl/code-generator-from-proto.svg?style=for-the-badge
-[license-url]: https://github.com/hamzaPixl/code-generator-from-proto/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/hamzaPixl/protobuf-ts-generator.svg?style=for-the-badge
+[contributors-url]: https://github.com/hamzaPixl/protobuf-ts-generator/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/hamzaPixl/protobuf-ts-generator.svg?style=for-the-badge
+[forks-url]: https://github.com/hamzaPixl/protobuf-ts-generator/network/members
+[stars-shield]: https://img.shields.io/github/stars/hamzaPixl/protobuf-ts-generator.svg?style=for-the-badge
+[stars-url]: https://github.com/hamzaPixl/protobuf-ts-generator/stargazers
+[issues-shield]: https://img.shields.io/github/issues/hamzaPixl/protobuf-ts-generator.svg?style=for-the-badge
+[issues-url]: https://github.com/hamzaPixl/protobuf-ts-generator/issues
+[license-shield]: https://img.shields.io/github/license/hamzaPixl/protobuf-ts-generator.svg?style=for-the-badge
+[license-url]: https://github.com/hamzaPixl/protobuf-ts-generator/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hamza-mounir-0a7bb6139/
 

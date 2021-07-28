@@ -1,5 +1,5 @@
 {
-  "name": "code-generator-from-proto",
+  "name": "protobuf-ts-generator",
   "displayName": "TypeScript's code generator for classes in Object Oriented Programming Style from a protobuf message.",
   "description": "Automatic code generator for classes from a protobuf message.",
   "version": "1.0.0",
@@ -7,10 +7,10 @@
   "author": "Hamza Mounir <hamza.pixelle@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hamzaPixl/code-generator-from-proto"
+    "url": "https://github.com/hamzaPixl/protobuf-ts-generator"
   },
   "bugs": {
-    "url": "https://github.com/hamzaPixl/code-generator-from-proto/issues"
+    "url": "https://github.com/hamzaPixl/protobuf-ts-generator/issues"
   },
   "icon": "images/icon.png",
   "engines": {

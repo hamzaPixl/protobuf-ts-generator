@@ -18,7 +18,7 @@ import {
 
 export function activate(context: vscode.ExtensionContext) {
   console.log(
-    'Congratulations, your extension "code-generator-from-proto" is now active!',
+    'Congratulations, your extension "protobuf-ts-generator" is now active!',
   );
 
   const commands = [
