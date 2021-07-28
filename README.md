@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://protobuf-ts-generator.hmounir.com">
-    <img src="https://raw.githubusercontent.com/hamzaPixl/protobuf-ts-generator/master/images/icon.png" alt="Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/hamzaPixl/protobuf-ts-generator/master/images/icon.png" alt="Logo">
   </a>
 
   <h3 align="center">protobuf-ts-generator</h3>
