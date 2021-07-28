@@ -3,7 +3,7 @@
   "displayName": "TypeScript's code generator for classes in Object Oriented Programming Style from a protobuf message.",
   "description": "Automatic code generator for classes from a protobuf message.",
   "version": "1.0.0",
-  "publisher": "Hamza Mounir",
+  "publisher": "hamzaPixl",
   "author": "Hamza Mounir <hamza.pixelle@gmail.com>",
   "repository": {
     "type": "git",

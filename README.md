@@ -11,7 +11,13 @@
     <img src="https://raw.githubusercontent.com/hamzaPixl/protobuf-ts-generator/master/images/icon.png" alt="Logo">
   </a>
 
-  <h3 align="center">protobuf-ts-generator</h3>
+  <h2 align="center">protobuf-ts-generator</h2>
+  <h3 align="center">
+    <a href="https://marketplace.visualstudio.com/items?itemName=hamzaPixl.protobuf-ts-generator">Extension in marketplace</a>
+  </h3>
+
+  <br />
+  <br />
 
   <p align="center">
     Generate Typescript code from protobuf message.
