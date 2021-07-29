@@ -7,22 +7,26 @@
 
 <br />
 <p align="center">
+  <h1 align="center">protobuf-ts-generator</h1>
+
   <a href="https://protobuf-ts-generator.hmounir.com">
     <img src="https://raw.githubusercontent.com/hamzaPixl/protobuf-ts-generator/master/images/icon.png" alt="Logo">
   </a>
 
-  <h2 align="center">protobuf-ts-generator</h2>
   <h3 align="center">
-    <a href="https://marketplace.visualstudio.com/items?itemName=hamzaPixl.protobuf-ts-generator">Extension in marketplace</a>
+    <a href="https://marketplace.visualstudio.com/items?itemName=hamzaPixl.protobuf-ts-generator">Vscode extension in marketplace</a>
   </h3>
 
+  <p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=hamzaPixl.protobuf-ts-generator#review-details"><img src="https://vsmarketplacebadge.apphb.com/rating-star/hamzaPixl.protobuf-ts-generator.svg?style=for-the-badge&colorA=FBBD30&colorB=F2AA08"/></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=hamzaPixl.protobuf-ts-generator"><img src="https://vsmarketplacebadge.apphb.com/downloads-short/hamzaPixl.protobuf-ts-generator.svg?style=for-the-badge&colorA=5DDB61&colorB=4BC74F&label=DOWNLOADS"/></a>
+  </p>
   <br />
   <br />
 
   <p align="center">
-    Generate Typescript code from protobuf message.
+    Generate Typescript code from protobuf message
     <br />
-    ·
     <a href="https://github.com/hamzaPixl/protobuf-ts-generator/issues">Report Bug</a>
     ·
     <a href="https://github.com/hamzaPixl/protobuf-ts-generator/issues">Request Feature</a>
@@ -35,13 +39,20 @@
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#input">Input</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#release">Release notes</a></li>
+    <li><a href="#release">Release</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#support">Support</a></li>
   </ol>
 </details>
+  <br />
+
+# Getting started
+
+You can install this awesome theme through the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=hamzaPixl.protobuf-ts-generator).
 
 # Introduction
 
@@ -65,84 +76,88 @@ So lets define for example a message that we are going tontranslate into Typescr
 
 Some of these services generates also tests so that you have coverages on generated code. All services has a command that you can run separetly but also a general command to have them all. Notice that you have always a second command to it for ES6 supports.
 
-## Props:
+## Props
 
 From properties it can generate props. The props are the entry definitions used when you want to create your object , update and more. Basically they are not the domain object, it’s more a plenty object that you map after to your object private properties.
 
-## Fixture:
+## Fixture
 
 For tests we always want to create a fake object with fake data. This function returns you fake data as props so that you can fill your object from it.
 
-## Getters:
+## Getters
 
 From properties it can generate getter for them. The getters are there to acces to your data when it’s private.
 
-## Setters:
+## Setters
 
 From properties it can generate setter for them. The setters are there to update your data when it’s private.
 
-## Equals:
+## Equals
 
 Function that check every property to define if the object received as input is the same as the actual object.
 
-## Constructor:
+## Constructor
 
 Each class has a constructor function to initialize your object so here we use props input to initialize the properties defined on the class.
 
-## Update:
+## Update
 
 This function is used to update properties of the object. Takes properties for the input and update the property if it’s defined.
 
-## Interface:
+## Interface
 
 From properties it can generate the interface that you want to export to your domain. Helps you in your typescript application. So that you don’t use your object as a type.
 
-## Mongo schema:
+## Mongo schema
 
 From properties it can generate the interface that you want to export to your repository to express object coming from mongodb. Helps you in your typescript application. Because they have a mongoose id but the rest of properies are the same as your interface.
 
-## Class:
+## Class
 
 Create a class from your protobuf message after processing the properties listed in it. It contains everything listed above and export it. Generate also a test file link to it.
 
-## Mappers:
+## Mappers
 
 For objects sometimes you need to change the format of your object to have a plenty object. You can have multiple format for the return type following the purpose that you need. We have different type of return such as props or protobuf type.
 
-- toProps: returns you the object that you have with props type.
+- `toProps` returns you the object that you have with props type.
 
-- toProto: returns you the object that you have with protobuf type.
+- `toProto` returns you the object that you have with protobuf type.
 
-## Nestjs module ( only crud ):
+## Nestjs module ( only crud )
 
 It generates you a simple module for your nestjs application to be directly used. A module contains multiple type of files. For simple usage it creates you only CRUD service for your entity.
 
-- Controller:
+- `Controller`
 
   Contains the http routes following REST convention for CRUD operation
 
-- Module:
+- `Module`
 
   Export the module as that you can import it to your main application
 
-- Use Case:
+- `Use Case`
 
   The pattern usage is simple, a use case file for a simple operation.
   This file contains function that are used on the controller for the CRUD operations defined in it.
 
-## Release
+# Release
 
-Relevant releases:
+## 1.0.1
 
-### 1.0.0
+Fixing the readme
+
+Fixing the name extension
+
+## 1.0.0
 
 Initial version
 
-## Roadmap
+# Roadmap
 
 See the [open issues](https://github.com/hamzaPixl/protobuf-ts-generator/issues) for a list of proposed features (and known issues).
 
-## Contributing
+# Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -152,13 +167,23 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
+# License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Contact
+# Contact
 
 Hamza Mounir - [@pixlhamza](https://twitter.com/pixlhamza) - hamza.pixelle@gmail.com
+
+# Support
+
+Contributions, issues, and feature requests are welcome!
+
+Give a ⭐️ if you like this project!
+
+# Acknowledgments
+
+Project base from [generate-getters-setters](https://github.com/WilsonGodoi/generate-getters-setters)
 
 [contributors-shield]: https://img.shields.io/github/contributors/hamzaPixl/protobuf-ts-generator.svg?style=for-the-badge
 [contributors-url]: https://github.com/hamzaPixl/protobuf-ts-generator/graphs/contributors
@@ -172,5 +197,3 @@ Hamza Mounir - [@pixlhamza](https://twitter.com/pixlhamza) - hamza.pixelle@gmail
 [license-url]: https://github.com/hamzaPixl/protobuf-ts-generator/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hamza-mounir-0a7bb6139/
-
-**Enjoy!**
