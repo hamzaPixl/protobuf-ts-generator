@@ -2,7 +2,7 @@
   "name": "protobuf-ts-generator",
   "displayName": "TypeScript's code generator from a protobuf message.",
   "description": "Automatic TypeScript's code generator from a protobuf message. Generate classes, props, mappers, ...",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "hamzaPixl",
   "author": "Hamza Mounir <hamza.pixelle@gmail.com>",
   "repository": {
@@ -21,7 +21,7 @@
     "Programming Languages",
     "Snippets"
   ],
-  "tags": [
+  "keywords": [
     "protobuf",
     "code",
     "generator",

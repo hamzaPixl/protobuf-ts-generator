@@ -4,6 +4,10 @@ All notable changes to the "protobuf-ts-generator" extension will be documented 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.3]
+
+- Fix tags
+
 ## [1.0.2]
 
 - Add tags

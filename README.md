@@ -143,6 +143,10 @@ It generates you a simple module for your nestjs application to be directly used
 
 # Release
 
+## `1.0.3`
+
+- Fix tags
+
 ## `1.0.2`
 
 - Add tags
