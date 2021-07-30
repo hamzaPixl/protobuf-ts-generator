@@ -17,7 +17,17 @@
     "vscode": "^1.57.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Programming Languages",
+    "Snippets"
+  ],
+  "tags": [
+    "protobuf",
+    "code",
+    "generator",
+    "ES6",
+    "Snippets",
+    "TypeScript"
   ],
   "activationEvents": [
     "onCommand:extension.generateAllFromProto",
