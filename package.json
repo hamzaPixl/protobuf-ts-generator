@@ -1,8 +1,8 @@
 {
   "name": "protobuf-ts-generator",
-  "displayName": "TypeScript's code generator for classes in Object Oriented Programming Style from a protobuf message.",
-  "description": "Automatic code generator for classes from a protobuf message.",
-  "version": "1.0.0",
+  "displayName": "TypeScript's code generator from a protobuf message.",
+  "description": "Automatic TypeScript's code generator from a protobuf message. Generate classes, props, mappers, ...",
+  "version": "1.0.1",
   "publisher": "hamzaPixl",
   "author": "Hamza Mounir <hamza.pixelle@gmail.com>",
   "repository": {
