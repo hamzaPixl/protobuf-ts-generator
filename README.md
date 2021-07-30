@@ -143,15 +143,19 @@ It generates you a simple module for your nestjs application to be directly used
 
 # Release
 
-## 1.0.1
+## `1.0.2`
 
-Fixing the readme
+- Add tags
+- Add categories
 
-Fixing the name extension
+## `1.0.1`
 
-## 1.0.0
+- Change title and description
+- Add some documentation
 
-Initial version
+## `1.0.0`
+
+- Initial release
 
 # Roadmap
 
